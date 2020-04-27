@@ -1,0 +1,158 @@
+/* Author: Your Name */
+
+/* Version: Quiz3 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+:root {
+    --font-family: 'Roboto';
+    --main-color: #05a081;
+    --text-color: #fff;
+    --bg-color: #eee;
+    --bg-color-2: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 18px;
+}
+
+header {
+    width: 100%;
+    background: transparent !important;
+    position: absolute;
+    display: inline-block;
+}
+.logo{
+    float: left;
+    color: var(--text-color);
+    font-size: 2rem;
+    padding: .4em;
+}
+nav{
+    text-align: left;
+    margin-top: .7em;
+    flex-wrap: wrap;
+    width: 50%;
+    position: absolute;
+    left: 45%;
+}
+nav ul{
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+nav ul li{
+    text-decoration: none;
+    flex: auto;
+}
+nav ul li a {
+    display: flex;
+    padding: 1em 2em;
+    text-decoration: none !important;
+    color:var(--text-color) !important;
+}
+
+.banner {
+    background-image: url(../images/background.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* custom css */
+
+.margin {
+    padding: 4em 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.bg-color {
+    background-color: var(--bg-color-2);
+    overflow: hidden;
+}
+
+main {
+    background: var(--bg-color);
+}
+
+.sideleft {
+    width: 30%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideright {
+    width: 60%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: var(--text-color) !important;
+    padding: 1em 2em;
+}
+
+.box {
+    width: 33%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    text-align: center;
+    color:var(--text-color);
+    height: 50%;
+    
+}
+.box .fas{
+    font-size: 30px;
+    justify-content: center;
+    padding: 5%;
+
+}
+footer{
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+}
+@media all and (max-width: 600px){
+    nav{
+        font-size: 1rem;
+        justify-content: center;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav ul li{
+        text-align: center;
+    }
+    .sideleft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sideright{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+}
